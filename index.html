@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Usenet Providers Tool</title>
+</head>
+
+<body>
+    <h1>Usenet Providers Tool</h1>
+    <div id="add-account-container" class="container">
+        <h2>Add Account</h2>
+        <form id="add-account-form">
+            <div id="add-account-error" class="alert alert-danger" role="alert" hidden>
+            </div>
+            <!-- <div class="input-group mb-3">
+                <input id="add-account-name" type="text" class="form-control" placeholder="Enter an account">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">+</button>
+                </div>
+            </div> -->
+            <input id="add-account-name" type="text" class="form-control" placeholder="Enter an account">
+            <button id="add-account-button" type="submit" class="btn btn-primary">Add Account</button>
+        </form>
+    </div>
+    <div id="details-container" hidden>
+        <div id="your-accounts-details" class="container">
+            <h2>Your Accounts</h2>
+            <ul id="your-accounts-list" class="list-group">
+            </ul>
+        </div>
+        <div id="your-backbones-details" class="container">
+            <h2>Your Backbones</h2>
+            <ul id="your-backbones-list" class="list-group">
+            </ul>
+        </div>
+
+        <div id="missing-backbones-details" class="container">
+            <h2>Missing Backbones</h2>
+            <ul id="missing-backbones-list" class="list-group">
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+
+    <script src="./page.js"></script>
+    <script src="./index.js"></script>
+    <script src="./datasource.js"></script>
+    <script src="./listeners.js"></script>
+    <script src="./render.js"></script>
+    <script src="./accounts.js"></script>
+    <script src="./backbones.js"></script>
+    <script src="./autocomplete.js"></script>
+
+</body>
+
+</html>
