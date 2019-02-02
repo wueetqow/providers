@@ -35,3 +35,11 @@ function getAllAccountNames(){
 function getYourAccountNames(){
     return yourAccounts.map(account => account.reseller).sort();
 }
+
+function getAccountsForBackbone(backbone){
+    return getAccounts().filter(account => account.backbone.name === backbone);
+}
+
+function getAccountNamesForBackbone(backbone){
+    return getAccountsForBackbone(backbone).map(account => account.reseller).sort();
+}
